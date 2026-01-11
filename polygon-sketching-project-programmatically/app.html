@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Polygon Drawing Tool</title>
+  <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #container {
+      border: 1px solid #aaa;
+      margin-bottom: 10px;
+    }
+    .controls {
+      margin-top: 8px;
+    }
+    button {
+      margin-right: 5px;
+    }
+    .hint {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Polygon Drawing Tool</h2>
+
+<div id="container"></div>
+
+<div class="controls">
+  <button id="undoBtn">Undo (Ctrl + Z)</button>
+  <button id="redoBtn">Redo (Ctrl + Y)</button>
+</div>
+
+<div class="hint">
+  • Click to add vertices<br>
+  • Move mouse to preview next edge<br>
+  • Double-click to finish polygon<br>
+  • Undo/Redo available via buttons or keyboard
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
